@@ -1,6 +1,6 @@
 ::placeholder, a, a:hover { color: inherit; }
-
-body { cursor: default; overflow-x: none; }
+html{scroll-behavior: smooth; overflow-x: hidden;}
+body { cursor: default; }
 body, button, input { font-family: 'Poppins', sans-serif; }
 body > section:not([id="landing"]) { background-color: white; }
 input { outline: none; border: none; }
@@ -72,6 +72,11 @@ figure, p { margin: 0; }
 #our-team img {
     height: 270px;
     object-fit: cover;
+}
+@media (max-width: 768px){
+    #our-team img {
+        height: 400px;
+    }
 }
 #our-team i { transition: opacity .2s; }
 #our-team i:hover { opacity: .5; }
